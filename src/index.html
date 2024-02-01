@@ -7,14 +7,15 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
     </style>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./assets/ebac_logo.svg" alt="EBAC">
-            <p class="hero__text">
-                O maior evento de tecnologia do Brasil começa em 10d 12h 20m 15s
+            <p class="hero__text" id="eventTimeStampMessage">
+                
             </p>
             <div class="infos-bar">
                 <ul class="infos-bar__infos">
@@ -28,14 +29,67 @@
                     </li>
                     <li class="infos-bar__infos__item">
                         <b>Quando</b>
-                        10/02/2024
+                        12/09/2024
                     </li>
                 </ul>
-                <a href="#" class="button button--primary">Garanta sua vaga</a>
+                <a href="#" class="button button--primary" id="buttonGetTicket">Garanta sua vaga</a>
             </div>
         </div>
     </header>
+    <section class="event event--frontend">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Front-End
+                </h2>
+                <p class="event__details__description">
+                    Prepare-se para explorar as fronteiras da experiência do usuário digital! No nosso evento, mergulharemos fundo no universo do Frontend, abordando as últimas tendências em tecnologias como React, Angular e Vue. Descubra as melhores práticas de design responsivo e aprimore suas habilidades para criar interfaces cativantes e intuitivas que impressionam.
+                </p>
+            </div>
+            <img class="event__image" src="./assets/frontend.png" alt="Front-End">
+        </div>
+    </section>
+    <section class="event event--uiux event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    UI/UX
+                </h2>
+                <p class="event__details__description">
+                    No fascinante mundo do UI/UX, a estética encontra a funcionalidade. Junte-se a nós para desvendar os segredos do design centrado no usuário, com discussões sobre prototipagem, testes de usabilidade e estratégias para aprimorar a interação. Explore casos de estudo emocionantes e aprenda a criar experiências memoráveis que deixarão uma marca duradoura.
+                </p>
+            </div>
+            <img class="event__image event__image--no-shadow" src="./assets/ui-ux.png" alt="UI/UX">
+        </div>
+    </section>
+    <section class="event event--data-science">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Data Science
+                </h2>
+                <p class="event__details__description">
+                    A ciência de dados é a chave para desbloquear insights valiosos em um mar de informações. Em nossa trilha de Data Science, mergulharemos em algoritmos, modelagem preditiva e visualização de dados. Descubra como transformar dados brutos em conhecimentos acionáveis e potencialize seu impacto no desenvolvimento de soluções inteligentes e inovadoras.
+                </p>
+            </div>
+            <img class="event__image" src="./assets/data.png" alt="Data Science">
+        </div>
+    </section>
+    <section class="event event--backend event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    Back-End
+                </h2>
+                <p class="event__details__description">
+                    O coração invisível, mas essencial, de qualquer aplicação – o Backend será desvendado em nosso evento! Explore linguagens como Python, Node.js e PHP, e compreenda os fundamentos da arquitetura de servidores, APIs e bancos de dados. Aprenda a construir sistemas robustos e eficientes que garantem o desempenho escalável e a segurança da sua aplicação web.
+                </p>
+            </div>
+            <img class="event__image" src="./assets/backend.png" alt="Back-End">
+        </div>
+    </section>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
